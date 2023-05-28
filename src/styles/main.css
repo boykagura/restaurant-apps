@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Quicksand:wght@500&family=Roboto+Mono:wght@200;300;400;500&display=swap');
+
+
+:root {
+  --green: #27ae60;
+  --black: #192a56;
+  --light-color:#666;
+  --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+*{
+  font-family: 'Roboto Mono', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  font-size: 1.7rem;
+  color: #fff;
+  background: var(--black);
+  border-radius: .5rem;
+  cursor: pointer;
+  padding: .8rem 3rem;
+  min-height: 44px;
+  min-height: 44px;
+}
+
+.btn:hover {
+  background: var(--green);
+  letter-spacing: .1rem;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden; 
+  scroll-padding-top: 5.5rem;
+  scroll-behavior: smooth;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1 rem 7%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: var(--box-shadow);
+}
+header .logo{
+  color: var(--black);
+  font-size: 2.5rem;
+  font-weight: bolder;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+header .logo{
+color: var(--green);
+}
+
+header .navbar a{
+  font-size: 1.7rem;
+  border-radius: 5rem;
+  padding: .5rem 1.5rem;
+  color: var(--light-color);
+  min-height: 44px;
+  min-width: 44px;
+}
+
+header .navbar a:hover {
+color: white;
+background-color: var(--green);
+}
+
+header .icons i,
+header .icons a{
+  cursor: pointer;
+  margin-left: .5rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  width: 4.5rem;
+  text-align: center;
+  font-size: 1.7rem;
+  color: var(--black);
+  border-radius: 50%;
+  background-color: #eee;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+header .icons i:hover,
+header .icons a:hover{
+color: white;
+background-color: var(--green);
+transform: rotate(360deg);
+}
+
+header .icons #menu-bars {
+  display: none;
+}
+
+
+
+section {
+  padding: 2rem 9%;
+}
+
+
+.home .home-slider .slide {
+  display: flex;
+  align-items: center;
+  flex-wrap:wrap ;
+  gap: 2rem;
+  padding-top: 9rem;
+}
+
+.home .home-slider .slide .content-first {
+  flex: 1 1 45rem;
+}
+
+.home .home-slider .slide .image {
+  flex: 1 1 45rem;
+}
+
+.home .home-slider .slide .image img{
+  width: 100%;
+}
+
+.home .home-slider .slide .content-first span {
+  color: var(--green);
+  font-size: 2.5rem;
+}
+.home .home-slider .slide .content-first h3{
+  color: var(--black);
+  font-size: 7rem;
+}
+
+.home .home-slider .slide .content-first p {
+  color: var(--light-color);
+  font-size: 2.2rem;
+  padding: .5rem 0 ;
+  line-height: 1.5;
+}
+#restouran{
+  padding: 5%;
+}
+.content-header {
+  text-align: center;
+  color: var(--black);
+}
+
+.content-item{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2% 3%;
+}
+.resto{
+  border: 1px solid ;
+}
+
+.resto > img{
+  width: 100%;
+  height: 34vh;
+
+}
+
+.resto-container{
+  padding: 3% 6%;
+}
+
+.resto-container > h2{
+  font-size: 3vh;
+  text-align: center;
+  color: var(--light-color);
+}
+
+.resto-desc{
+  text-align: justify;
+  margin-bottom: 7%;
+  font-size: 2.4vh;
+  color: var(--light-color);
+}
+
+.resto-info{
+  text-align: center;
+  font-size: 2.3vh;
+  color: var(--light-color);
+}
+
+.skip {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  color: #eee;
+  padding: 8px;
+  z-index: 100;
+}
+ 
+.skip:focus {
+   top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:991px) {
+
+  html {
+    font-size: 55%;
+  }
+  header{
+    padding: 1rem 2rem;
+  }
+  section {
+    padding: 2rem ;
+  }
+  
+  
+} 
+
+@media (max-width:768px) {
+  header .icons #menu-bars {
+    display: inline-block;
+  }
+  header .navbar {
+    position: absolute;
+    top: 100% ;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-top: .1rem solid rgba (0,0,0,.2);
+    border-bottom: .1rem solid rgba (0,0,0,.2);
+    padding: 1rem;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  header .navbar.active {
+    clip-path:polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+  }
+
+  header .navbar a{
+    display: block;
+    padding: 1.5rem;
+    margin: 1rem;
+    font-size: 2rem;
+    background: #eee;
+  }
+  .home .home-slider .slide .content h3{
+    font-size: 5rem;
+  }
+}
+@media (max-width:991px) {
+
+  html {
+    font-size: 50%;
+  }
+  
+} 
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .content-item {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+  @keyframes nav-active {
+    from {
+      transform: translateY(-50%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
