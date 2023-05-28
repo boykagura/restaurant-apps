@@ -196,6 +196,20 @@ section {
   font-size: 2.3vh;
   color: var(--light-color);
 }
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
+  gap: 1.5rem;
+}
+.footer .credit {
+  text-align: center;
+  color: var(--black);
+  border-top: .1rem solid rgba(0,0,0,.1);
+  font-size: 2rem;
+  padding: .5rem;
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+}
 
 .skip {
   position: absolute;
