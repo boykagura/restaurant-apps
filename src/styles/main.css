@@ -27,7 +27,7 @@
   border-radius: .5rem;
   cursor: pointer;
   padding: .8rem 3rem;
-  min-height: 44px;
+  min-width: 44px;
   min-height: 44px;
 }
 
@@ -70,10 +70,11 @@ color: var(--green);
 header .navbar a{
   font-size: 1.7rem;
   border-radius: 5rem;
-  padding: .5rem 1.5rem;
   color: var(--light-color);
   min-height: 44px;
   min-width: 44px;
+  margin: .5rem 1.5rem;
+  padding: 1.8rem;
 }
 
 header .navbar a:hover {
@@ -81,8 +82,9 @@ color: white;
 background-color: var(--green);
 }
 
-header .icons i,
-header .icons a{
+header .icons i, 
+header .icons a,
+header .icons button{
   cursor: pointer;
   margin-left: .5rem;
   height: 4.5rem;
@@ -98,7 +100,8 @@ header .icons a{
 }
 
 header .icons i:hover,
-header .icons a:hover{
+header .icons a:hover,
+header .icons button:hover{
 color: white;
 background-color: var(--green);
 transform: rotate(360deg);
