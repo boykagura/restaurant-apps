@@ -2,37 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv = "X-UA-Compatible" content="IE-edge">
-  <meta name="viewport" content="width = device-widht, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Restaurant Apps Starter Project</title>
-<link rel="stylesheet" href="/src/styles/main.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="/src/styles/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <a href="#main" class="skip-link">Lanjutkan Membaca</a>
   <header>
     <a href="#" class="logo"><i class="fas fa-utensils"></i> Restaurant Apps</a>
     <nav id="navbar" class="navbar">
-      <a href="./index.html">Home</a>
-      <a href="#/restaurant">Catalouge</a>
-      <a href="#/favourite">Favourite</a>
-      <a href="#/about">About us</a>
+      <div id="nav-items" class="nav-items">
+        <a href="./index.html">Home</a>
+        <a href="#/restaurant">Catalouge</a>
+        <a href="#/favourite">Favourite</a>
+        <a href="#/about">About us</a>
+      </div>
     </nav>
     
     <div class="icons">
       <button class="menu-bars" id="menu-bars" ><i class="fas fa-bars"></i></button>
-      <i class="fas fa-search" id="search-icon"></i>
       <a href="#" class="fas fa-heart"></a>
       <a href="#" class="fas fa-shopping-cart"></a>
     </div>
     
   </header>
-    <section class="home" id="home">
-      <div class="home-slider">
-        <div class="wrapper">
-          <div class="slide">
-              <div class="content-first">
+  <section class="home" id="home">
+    <div class="home-slider">
+      <div class="wrapper">
+        <div class="slide">
+          <div class="content-first">
             <span>Our Special Restaurant</span>
             <h3>Restaurant Special</h3>
             <p>lorem ipsum</p>
@@ -44,21 +45,19 @@
         </div>
       </div>
     </div>
+  </section>
+  <main id="main" tabindex="0">
+    <h1 id="content-header" class="content-header" aria-placeholder="Our Caffe">Our Restaurant</h1>
+    <section id="content" tabindex="0"></section>
+  </main>
+  <footer>
+    <section class="footer">
+      <div class="box-container">
+        <div class="credit">Copyright @2023 by Boy Boy Geodevandry</div>
+      </div>
     </section>
-    <main id="main" tabindex="0">
-      <h1 id="content-header" class="content-header" aria-placeholder="Our Caffe">Our Restaurant</h1>
-      <section id="content" tabindex="0">
-      </section>
-    </main>
-    <footer>
-      <section class="footer">
-        <div class="box-container">
-          <div class="credit">Copyright @2023 by Boy Boy Geodevandry</div>
-        </div>
-      </section>
-    </footer>
+  </footer>
+  
+  <script src="/dist/app.bundle.js"></script>
 </body>
-
-
-<script src="/dist/app.bundle.js"></script>
 </html>

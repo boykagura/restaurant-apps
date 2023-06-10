@@ -8,7 +8,6 @@ const resto = {
       `;
   },
 
- 
 };
 
 export default resto;

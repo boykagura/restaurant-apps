@@ -330,7 +330,7 @@ section {
     font-size: 55%;
   }
   header{
-    padding: 1rem 2rem;
+    padding:0.2rem 0.8rem;
   }
   section {
     padding: 2rem ;
@@ -344,10 +344,10 @@ section {
     display: inline-block;
   }
   header .navbar {
-    position: absolute;
-    top: 100% ;
-    left: 0;
-    right: 0;
+    display:inline-flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
     background: #fff;
     border-top: .1rem solid rgba (0,0,0,.2);
     border-bottom: .1rem solid rgba (0,0,0,.2);
@@ -403,16 +403,16 @@ section {
     min-width: 44px;
     min-height: 44px;
   }
-  .navbar {
+  .nav-items{
     display: none;
   }
-  .navbar a.open {
-    position: static;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0.5rem;
-        animation-name: nav-active;
-        animation-duration: 0.5s;
+  .nav-items.open {
+    position:fixed;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    animation-name: nav-active;
+    animation-duration: 0.5s;
   }
 }

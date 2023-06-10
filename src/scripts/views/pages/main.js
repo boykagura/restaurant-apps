@@ -1,4 +1,3 @@
-
 const homepage = {
   async render() {
     return `
@@ -6,6 +5,6 @@ const homepage = {
         </div>
         `;
   },
-}
+};
 
 export default homepage;
