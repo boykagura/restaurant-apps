@@ -2,9 +2,8 @@
 import drawerInitiator from '../utils/drawer-intiator';
 
 class Apps {
-  constructor({ button, drawer, navDrawer, content }) {
+  constructor({ button, navDrawer, content }) {
     this._button = button;
-    this._drawer = drawer;
     this._navDrawer = navDrawer;
     this._content = content;
 

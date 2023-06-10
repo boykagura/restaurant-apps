@@ -379,6 +379,19 @@ section {
   
 } 
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+    background-color: #fff;
+}
+
+.nav-proper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
   .content-item {
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
@@ -407,12 +420,13 @@ section {
     display: none;
   }
   .nav-items.open {
-    position:fixed;
-    display: block;
+    position:static;
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
     animation-name: nav-active;
     animation-duration: 0.5s;
+    font-size: 1.7rem;
   }
 }
